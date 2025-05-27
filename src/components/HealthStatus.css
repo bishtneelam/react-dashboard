@@ -236,3 +236,29 @@ flex-direction: column;
       font-size: 13px;
       color: #666;
     }
+    @media screen and (max-width: 768px) {
+  .top-section {
+    padding: 0px 16px 24px 16px;
+  }
+  .anatomy-organ-status-section{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 24px;
+    align-self: center;
+  }
+  .details-section{
+    display: none;
+  }
+ }
+ @media (min-width: 769px) and (max-width: 1024px) {
+  .anatomy-organ-status-section{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .organ-status-container {
+    display: flex;
+    flex-direction: column;
+  }
+ }

@@ -3,7 +3,7 @@ html, body, #root {
   margin: 0;
   padding: 0;
   background-color: #e5eff9;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .app-container {
@@ -68,6 +68,42 @@ html, body, #root {
 .content-sections {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+  }
+  .app-container {
+    overflow: auto;
+  }
+  .layout {
+    overflow: auto;
+    flex-direction: column;
+  }
+
+  .content-sections {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* .sidebar {
+    display: block;
+    flex: 0 1 25%;
+    max-width: 200px;
+  } */
+
+  .app-container {
+    overflow: auto;
+  }
+
+  .layout {
+    flex-direction: row;
+    overflow: auto;
+  }
+
+  .content-sections {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    overflow: auto;
   }
 }
 

@@ -11,27 +11,15 @@
     gap: 32px;
     justify-content: start;
 }
-@media screen and (min-Height: 768px) {
-  .human-anatomy-image {
-    width: 200px;
-    height: 400px;
-  }
-  .main-content{
-    gap: 4px;
-  }
-  .anatomy-organ-status-section{
-    flex:0.5;
-  }
-  .appointment-slots-container{
-    padding-bottom: 12px;
-  }
-}
 
 
 h2,
 h3{
     color: #34316d;
     margin: 0px;
+}
+.upcoming-appointment h2 {
+  padding: 16px 0px;
 }
 .header-section {
     display: flex;
@@ -78,3 +66,17 @@ h3{
     padding:24px 0px 48px 0px 
   }
 }
+ @media (min-width: 769px) and (max-width: 1024px) {
+  .grid-container{
+    font-size: 2px;
+  }
+  .appointment-slots-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+  }
+  h2{
+    padding-top: 24px;
+  }
+ }
+
