@@ -1,0 +1,238 @@
+.health-vitals-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding-top: 20px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+.week-section{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap:12px;
+}
+.chevron-down-icon{
+    width: 16px;
+    height: 16px;
+}
+.details-section{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap:12px;
+}
+.right-arrow-icon{
+     width: 16px;
+    height: 16px;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex:1;
+    gap: 24px;
+}
+.anatomy-organ-status-section {
+    display: flex;
+    /* gap:82px; */
+    flex:0.7;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:  0px 48px 24px;
+}
+.human-anatomy {
+  position: relative;
+  display: flex;
+  flex:1;
+  align-self: flex-start;
+  background-color: #f6faff;
+  border-radius: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.human-anatomy-image {
+  width: 270px;
+  height: 480px;
+}
+@media screen and (min-height: 768px) {
+  .human-anatomy-image {
+    width: 200px;
+    height: 400px;
+  }
+  .main-content{
+    gap: 4px;
+  }
+  .anatomy-organ-status-section{
+    flex:0.5;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .human-anatomy-image {
+    width: 350px !important;
+    height: 550px !important;;
+  }
+  .main-content{
+    justify-content: space-around
+  }
+  .scanner-image-heart {
+    position: absolute !important;
+    top: 20% !important;
+    right: 35% !important;
+  }
+  .scanner-image-leg {
+    position: absolute !important;
+    left: 120px !important ;
+    bottom: 150px !important;
+  }
+  .healthy-leg-content {
+    position: absolute !important;
+    left:-48px !important;
+    bottom: 150px !important;
+  }
+  /* .healthy-heart-content{
+    position: absolute !important;
+    top: 20% !important;
+    right:-46px !important;
+  } */
+}
+.zoom-in-image {
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    top:16px;
+    right:16px
+}
+.organ-status-container{
+display: flex;
+flex-direction: column;
+   flex: 1;
+   gap:24px;
+   align-items: flex-end;
+   align-self: flex-start;
+    
+}
+.healthy-heart-content {
+    position: absolute;
+    top: 20%;
+    right:-46px;
+    display: flex;
+    align-items: center;
+    background-color: #3834a7;
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 12px;
+    gap: 4px;
+ 
+}
+.healthy-leg-content {
+    position: absolute;
+    left:-65px;
+    bottom: 110px;
+    display: flex;
+    align-items: center;
+    background-color: #15deec;
+    color: #34316d;
+    padding: 8px 24px;
+    border-radius: 12px;
+    gap: 4px;
+}
+.healthy-icon{
+    height: 24px;
+    width: 24px;
+}
+.scanner-image-leg {
+    position: absolute;
+    left: 58px ;
+    bottom: 110px;
+    height: 48px;
+    width: 48px;
+}
+.scanner-image-heart {
+    position: absolute;
+    top: 18%;
+    right: 45%;
+    height: 48px;
+    width: 48px;
+}
+.activity-container {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    gap: 24px;
+    padding: 16px 16px;
+    border-radius: 24px;
+    background-color: #f6faff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.activity {
+    display: flex;
+    flex: 0.1;
+    justify-content: space-between;
+
+    align-items: start;
+}
+.activity-title {
+    display: flex;
+
+      font-size: 20px;
+      font-weight: bold;
+      color: #2d2a7c;
+    }
+ 
+    .activity-subtitle {
+      font-size: 14px;
+      color: #888;
+    }
+ 
+    .chart {
+      display: flex;
+      flex:0.3;
+      justify-content: space-evenly;
+      gap: 12px;
+    }
+ 
+    .day {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+ 
+    .bars {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      height: 60px;
+      align-items: center;
+      padding-bottom: 8px;
+    }
+ 
+    .bar {
+      width: 4px;
+      border-radius: 4px;
+    }
+ 
+    /* Color classes */
+    .cyan { background-color: #00d5ff; }
+    .purple { background-color: #3f3d9b; }
+    .gray { background-color: #d3d3d3; }
+ 
+    /* Height classes */
+    .h10 { height: 10px; }
+    .h20 { height: 20px; }
+    .h30 { height: 30px; }
+    .h40 { height: 40px; }
+    .h50 { height: 50px; }
+    .h60 { height: 60px; }
+    .h70 { height: 70px; }
+ 
+    .day-label {
+      font-size: 13px;
+      color: #666;
+    }

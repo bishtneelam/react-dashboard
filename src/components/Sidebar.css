@@ -1,0 +1,30 @@
+
+.sidebar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* border: 1px solid black */
+}
+
+.sidebar-section {
+    color: #c6c9cd;
+}
+
+.sidebar-items {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 32px;
+
+}
+
+.sidebar-icon {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+}

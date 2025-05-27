@@ -1,0 +1,80 @@
+.appointment-status {
+    margin: 24px
+}
+.appointment-day {
+    padding: 12px 0px;
+    font-size: 20px;
+    color: #969798;
+}
+.appointment-slots-container {
+    display: flex;
+    gap: 32px;
+    justify-content: start;
+}
+@media screen and (min-Height: 768px) {
+  .human-anatomy-image {
+    width: 200px;
+    height: 400px;
+  }
+  .main-content{
+    gap: 4px;
+  }
+  .anatomy-organ-status-section{
+    flex:0.5;
+  }
+  .appointment-slots-container{
+    padding-bottom: 12px;
+  }
+}
+
+
+h2,
+h3{
+    color: #34316d;
+    margin: 0px;
+}
+.header-section {
+    display: flex;
+    justify-content: space-between;
+}
+.arrow-icon {
+    display: flex;
+    justify-self: center;
+    
+}
+.left-arrow {
+    height: 24px;
+    width: 32px;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 24px);
+  gap: 12px;
+  padding: 12px 0px;
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #34316d;
+  font-size: 12px;
+}
+
+.highlight {
+  background-color: #e0f0ff;
+}
+
+@media screen and (min-Height: 1024px) {
+  .appointment-slots-container{
+    padding-bottom: 32px;
+  }
+  h2, 
+  h3 {
+    padding-bottom: 24px;
+  }
+  .grid-container {
+    padding:24px 0px 48px 0px 
+  }
+}

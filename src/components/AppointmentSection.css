@@ -1,0 +1,26 @@
+.appointment-card {
+    border-radius: 24px;
+    padding: 24px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+.profession-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    padding: 0px;
+}
+.profession-header {
+    font-weight:bold;
+    margin: 0px;
+}
+img {
+    height: 24px;
+    width: 24px;
+}
+p{
+    margin: 0px
+}
